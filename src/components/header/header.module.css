@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    padding: 0 0 13px 0;
+    display: grid;
+    grid-template-columns: 1fr 40px 95px;
+  }
+
+  .activeSearch {
+    grid-template-columns: 1fr;
+  }
+}

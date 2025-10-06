@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  background: rgba(17, 17, 17, 1);
+}
+
+.textBlock {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 82px 0;
+}
+
+.contactsBlock {
+  margin-right: 300px;
+}
+
+.contactsTitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 28px;
+}
+
+.contacts {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.disclaimer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  border-top: 1px solid var(--card-border-color);
+  box-sizing: border-box;
+}
+
+.categoriesContainer {
+  margin-right: 124px;
+}
+
+.disclaimerText {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+
+.categoriesHeader {
+  width: 219px;
+}
+
+.usefulHeader {
+  width: 167px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: -13px;
+    width: calc(100% + 26px);
+  }
+
+  .textBlock {
+    padding: 48px 13px;
+    flex-direction: column;
+  }
+
+  .contactsBlock {
+    margin: 0;
+  }
+
+  .categoriesContainer {
+    margin: 28px 0;
+  }
+}

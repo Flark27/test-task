@@ -1,0 +1,8 @@
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--accent-state-color);
+  border: 0;
+  font-weight: 500;
+  color: var(--accent-state-color);
+}

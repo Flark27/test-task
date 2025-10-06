@@ -1,0 +1,117 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 0;
+  background: var(--control-color);
+  width: 100%;
+  height: 36px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text-primary-color);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.chip:hover {
+  background: var(--control-hover-color);
+}
+
+.chip:focus-visible {
+  outline: none;
+}
+
+.chipActive {
+  background: var(--control-hover-color);
+}
+
+.chipSelected {
+  background-color: var(--accent-state-color);
+}
+
+.chipSelected > span {
+  color: var(--text-inverted-color);
+}
+
+.chipSelected:hover {
+  background-color: var(--accent-hover-color);
+}
+
+.chipText {
+  white-space: nowrap;
+  color: var(--text-primary-color);
+}
+
+.chevron {
+  transition: transform 0.18s ease;
+  opacity: 0.75;
+}
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.chevron > path {
+  stroke: var(--accent-state-color);
+}
+
+.chevronActive > path {
+  stroke: white;
+}
+
+.menu {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  min-width: 100%;
+  z-index: 20;
+  background: var(--background-base-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 12px;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  list-style-type: none;
+}
+
+.item {
+  position: relative;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary-color);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.item > svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4px;
+}
+
+.item:hover {
+  background: var(--control-hover-color);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    left: -5%;
+  }
+
+  .item {
+    padding: 8px 12px;
+  }
+}

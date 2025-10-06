@@ -1,0 +1,41 @@
+.container {
+  padding: 48px 0 90px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: calc(100vh - 70px - 88px - 635px);
+}
+
+.cardsGrid {
+  display: flex;
+  column-gap: 13px;
+  row-gap: 18px;
+  flex-wrap: wrap;
+}
+
+.showMoreButton {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowIcon {
+  stroke: var(--accent-state-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 16px;
+    padding: 32px 0 48px 0;
+  }
+
+  .showMoreButton {
+    margin-top: 28px;
+  }
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  gap: 8px;
+  background-color: var(--control-color);
+  border-radius: 10px;
+  height: 48px;
+  width: 33%;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.container:hover {
+  background-color: var(--control-hover-color);
+}
+
+.container:focus-within {
+  background-color: var(--background-base-color);
+  border: 1px solid var(--card-border-color);
+}
+
+.container > label {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  cursor: text;
+}
+
+.input {
+  border: 0;
+  background-color: transparent;
+  font-size: 15px;
+  color: var(--text-primary-color);
+  outline: 0;
+  width: 100%;
+  padding: 16px 16px 16px 48px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.searchButton,
+.closeSearchButton {
+  border: 0;
+  background: transparent;
+}
+
+.closeSearchButton {
+  position: absolute;
+  left: calc(100% - 38px);
+  top: 15px;
+}

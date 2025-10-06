@@ -1,0 +1,63 @@
+.container {
+  width: 227px;
+  display: grid;
+  grid-template-rows: 188px 140px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 16px;
+  position: relative;
+}
+
+.container:hover {
+  border-color: var(--accent-state-color);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05) 0px 6px 13px 0px
+    rgba(0, 0, 0, 0.05) 0px 24px 24px 0px rgba(0, 0, 0, 0.04) 0px 54px 33px 0px
+    rgba(0, 0, 0, 0.03) 0px 97px 39px 0px rgba(0, 0, 0, 0.01) 0px 151px 42px 0px
+    rgba(0, 0, 0, 0);
+}
+
+.logoContainer {
+  background: var(--card-background-color);
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 13px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary-color);
+}
+
+.description,
+.ratingNumber {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+button.readMoreButton {
+  padding: 13px 0;
+  text-align: start;
+  border-top: 1px solid var(--card-border-color);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}

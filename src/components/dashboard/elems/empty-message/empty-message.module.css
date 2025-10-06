@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 135px 0 270px 0;
+}
+
+.header {
+  margin-top: 24px;
+  font-weight: 600;
+  color: var(--text-primary-color);
+  font-size: 25px;
+  width: max-content;
+}
+
+.text {
+  margin-top: 24px;
+  font-size: 16px;
+  color: var(--text-secondary-color);
+  width: max-content;
+}
+
+.button {
+  margin-top: 24px;
+  height: 48px;
+  width: 230px;
+  border-radius: 10px;
+}

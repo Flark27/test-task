@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 3px solid white;
+  padding: 0 0 8px 0;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.list {
+  padding-left: 24px;
+}
+
+.listItem {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
