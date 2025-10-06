@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export const useIsMobile = (query: string = "(max-width: 767px)"): boolean => {
   const getMatches = (newQuery: string): boolean => {
@@ -10,9 +10,9 @@ export const useIsMobile = (query: string = "(max-width: 767px)"): boolean => {
 
   const [matches, setMatches] = useState<boolean>(getMatches(query));
 
-  function handleChange() {
+  const handleChange = useCallback(() => {
     setMatches(getMatches(query));
-  }
+  }, [setMatches, query]);
 
   useEffect(() => {
     const matchMedia = window.matchMedia(query);
@@ -22,7 +22,7 @@ export const useIsMobile = (query: string = "(max-width: 767px)"): boolean => {
     return () => {
       matchMedia.removeEventListener("change", handleChange);
     };
-  }, [query]);
+  }, [query, handleChange]);
 
   return matches;
 };

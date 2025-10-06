@@ -40,7 +40,7 @@ export const Dashboard = () => {
     if (isSuccess) {
       dispatch(suppliersSetIsLoading(false));
     }
-  }, [isSuccess]);
+  }, [isSuccess, dispatch]);
 
   const suppliers = useMemo(() => {
     const suppliers = data?.suppliers ?? [];
@@ -48,7 +48,7 @@ export const Dashboard = () => {
     if (!isSearchActive) return suppliers;
 
     return search ? suppliers : [];
-  }, [data, isSearchActive]);
+  }, [data, isSearchActive, search]);
 
   const total = data?.total ?? 0;
 

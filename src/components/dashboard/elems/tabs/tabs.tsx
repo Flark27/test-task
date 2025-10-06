@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { TABS } from "../../../../utils/constants/tabs";
 import { Tab } from "../../../tab/tab";
 import styles from "./tabs.module.css";

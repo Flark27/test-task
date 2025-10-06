@@ -7,7 +7,7 @@ import {
   suppliersSetActiveSearch,
   suppliersSetSearch,
 } from "../../redux/modules/suppliers";
-import { ChangeEventHandler, useEffect, useState } from "react";
+import { ChangeEventHandler, useEffect } from "react";
 import { debounce } from "../../utils/helpers/debounce";
 import { useIsMobile } from "../../utils/hooks/use-is-mobile";
 import { useTypedSelector } from "../../utils/hooks/typed-react-redux-hooks";
